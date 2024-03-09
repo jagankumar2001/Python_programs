@@ -56,5 +56,5 @@ while f:
 	elif ch==4:
 		f=0
 	else:
-		print("invalid")
+		print("invalid choice")
 		break
