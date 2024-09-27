@@ -1,5 +1,5 @@
 d={}
-
+f=1
 class employee:
 	def input(self):
 		self.name=input("Enter the name of the Employee\n")
@@ -43,8 +43,8 @@ class employee:
 
 em=employee()
 
-while True:
-	print("\n1.Enter the Employee Details\n2.Search For theEmployee\n3.Display all Employees\n")
+while f:
+	print("\n1.Enter the Employee Details\n2.Search For theEmployee\n3.Display all Employees\n4.Exit")
 	ch=int(input("Enter your choice:\n"))
 	if ch==1:
 		em.input()
@@ -53,6 +53,8 @@ while True:
 		em.search(name)
 	elif ch==3:
 		em.printemp()
+	elif ch==4:
+		f=0
 	else:
-		print("invalid")
+		print("invalid choice")
 		break
